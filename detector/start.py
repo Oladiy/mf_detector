@@ -94,7 +94,10 @@ def main():
             bot.reply_to(message, service_parameters.report_reject_message)
         else:
             devices_info = devices_detector.get_devices_info()
-            bot.reply_to(message, devices_info)
+            if not devices_info:
+                bot.reply_to(message, service_parameters.devices_not_found_message)
+            else:
+                bot.reply_to(message, devices_info)
 
     @bot.message_handler(func=lambda m: True)
     def echo_all(message):
