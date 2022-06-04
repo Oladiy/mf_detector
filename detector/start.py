@@ -76,7 +76,8 @@ def main():
                     logger.info("Stopping the monitoring")
                     break
                 devices_info = devices_detector.get_devices_info()
-                if not devices_info:
+                if not devices_info and service_parameters.previous_devices_info:
+                    service_parameters.previous_devices_info = devices_info
                     bot.reply_to(message, service_parameters.devices_not_found_message)
                 elif not service_parameters.previous_devices_info == devices_info:
                     service_parameters.previous_devices_info = devices_info
