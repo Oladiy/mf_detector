@@ -33,10 +33,11 @@ Export the required parameters and start the service:
 
 
 ## To do
-* Add multiple languages support (a separate class)
-* Add docstrings
-* Different routers support (to parse PA)
-* Make normal HTML parsing (PersonalAccountHTMLParser)
-* Add a parameter to skip lan interfaces
-* Add authorization to the telegram bot
-* Add a README in Russian
+* Add multiple languages support (a separate class).
+* Add docstrings.
+* Different routers support (to parse PA).
+* Make normal HTML parsing (PersonalAccountHTMLParser).
+* Add a parameter to skip lan interfaces.
+* Add authorization to the telegram bot.
+* Add a README in Russian.
+* Add asynchronous service status update when monitoring mode is stopped.
