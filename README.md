@@ -6,7 +6,7 @@ The service is currently under development (see [here](https://github.com/Oladiy
 
 ## Configuration parameters
 * `TELEGRAM_BOT_TOKEN` - **Required**.
-* `TIMEOUT` - Waiting time in seconds between cycles when using the `/monitoring` command.
+* `TIMEOUT` - Waiting time in seconds between cycles when using the `/monitoring` command. The default value is 10.
 * `DEVICES_DETECTOR_TYPE` - Type of device detector. Currently, only personal account parsing is supported (`PersonalAccountParser`). **Required**.
 * `LOG_LEVEL_STDOUT` - Logging level. The default value is 'INFO'.
 
